@@ -17,7 +17,7 @@ async function fetchBooks() {
         // purane bale kay hatya gyaa hai
         container.innerHTML = '';
         first = []; // Reset the array
-
+       console.log(api.data.data);
         // it can render the book from tbe api
         api.data.data.forEach((obj) => {
             const book = obj.volumeInfo;
