@@ -11,7 +11,7 @@ let first = []; // it is a array to store a details of all books
 // api sei data fetch krne ke liye likha gya hai
 async function fetchBooks() {
     try {
-        const response = await fetch(`https://api.freeapi.app/api/v1/public/books?page=${one}&limit=10&inc=kind%252Cid%252Cetag%252CvolumeInfo&query=tech`);
+        const response = await fetch(`https://api.freeapi.app/api/v1/public/books?page=${one}&limit=10`);
         const api = await response.json();
 
         // purane bale kay hatya gyaa hai
